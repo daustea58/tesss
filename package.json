@@ -1,24 +1,24 @@
 {
-  "name": "pink-cute-app",
+  "name": "hai-wanita-cantikku",
+  "private": true,
   "version": "1.0.0",
-  "description": "Pink cute static web app with location and camera access",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "netlify dev",
-    "build": "echo 'No build needed for static site'"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "node scripts/check-project.mjs",
+    "test": "vitest run"
   },
-  "keywords": [
-    "netlify",
-    "static",
-    "pink",
-    "cute"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "form-data": "^4.0.5"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "netlify-cli": "^17.0.0"
+    "@testing-library/react": "^16.3.3",
+    "@vitejs/plugin-react": "^6.3.0",
+    "jsdom": "^31.0.1",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
   }
 }

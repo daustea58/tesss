@@ -1,5 +1,7 @@
 node_modules/
-.netlify/
-.env
-*.log
+dist/
 .DS_Store
+.env
+.env.*
+!.env.example
+*.log
